@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset='UTF-8'>
+<title>Non-Responsive Table</title>
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+ <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+ <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+ <!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.5/css/jquery.dataTables.css">
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+ <script >
+ $(document).ready(
+ /* This is the function that will get executed after the DOM is fully loaded */
+  function () {
+    $( "#tblData" ).DataTable({   
+             
+             sPaginationType: "full_numbers"
+});
+	});
+ </script>
+</head>
+
+<body>
+<center>
+<h2>Demo</h2>
+<div>Sample Responsiveness on table .</div>
+</br>
+</br>
+<div id="tableA">
+<table id="tblData" border="1">
+	<thead>
+	<tr>
+	    <th>SL.No</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+        <th>Phone No</th>
+		<th>City</th>
+		<th>State</th>
+		<th>Country</th>
+		<th>Job Title</th>
+        <th>Experience</th>
+		<th>Company</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	     <td>1</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	     <td>2</td>
+		<td>The</td>
+		<td>TICK</td>
+		<td>852369</td>
+		<td>Hyderbad</td>
+		<td>Andhra</td>
+		<td>India</td>
+		<td>Crimefighter Sorta</td>
+		<td>12 yrs</td>
+		<td>Air GO</td>
+	</tr>
+	<tr>
+          <td>3</td>	
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>4</td>
+		<td>The</td>
+		<td>ASD</td>
+		<td>852369</td>
+		<td>Hyderbad</td>
+		<td>Andhra</td>
+		<td>India</td>
+		<td>Crimefighter Sorta</td>
+		<td>12 yrs</td>
+		<td>Air GO</td>
+	</tr>
+	<tr>
+	 <td>5</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>6</td>
+		<td>The</td>
+		<td>ASPER</td>
+		<td>852369</td>
+		<td>Hyderbad</td>
+		<td>Andhra</td>
+		<td>India</td>
+		<td>Crimefighter Sorta</td>
+		<td>12 yrs</td>
+		<td>Air GO</td>
+	</tr>
+	<tr>
+	 <td>7</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>8</td>
+		<td>The</td>
+		<td>JIM</td>
+		<td>852369</td>
+		<td>Hyderbad</td>
+		<td>Andhra</td>
+		<td>India</td>
+		<td>Crimefighter Sorta</td>
+		<td>12 yrs</td>
+		<td>Air GO</td>
+	</tr>
+	<tr>
+	 <td>9</td>
+		<td>The</td>
+		<td>NATLIE</td>
+		<td>852369</td>
+		<td>Hyderbad</td>
+		<td>Andhra</td>
+		<td>India</td>
+		<td>Crimefighter Sorta</td>
+		<td>12 yrs</td>
+		<td>Air GO</td>
+	</tr>
+	<tr>
+	 <td>10</td>
+		<td>The</td>
+		<td>NORAD</td>
+		<td>852369</td>
+		<td>Hyderbad</td>
+		<td>Andhra</td>
+		<td>India</td>
+		<td>Crimefighter Sorta</td>
+		<td>12 yrs</td>
+		<td>Air GO</td>
+	</tr>
+	<tr>
+	 <td>11</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>12</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>13</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>14</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>15</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>16</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>17</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>18</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>19</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>20</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>21</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>22</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>23</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>24</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>25</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>26</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>27</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>28</td>
+		<td>James</td>
+		<td>MATAM</td>
+        <td>123456</td>
+		<td>Ohio City</td>
+		<td>New Jersy</td>
+		<td>United States</td>
+		<td>Chief Sandwich Eater</td>
+		<td>10 yrs</td>
+		<td>Infocom</td>
+	</tr>
+	<tr>
+	 <td>29</td>
+		<td>The</td>
+		<td>NOMAN</td>
+		<td>852369</td>
+		<td>Hyderbad</td>
+		<td>Andhra</td>
+		<td>India</td>
+		<td>Crimefighter Sorta</td>
+		<td>12 yrs</td>
+		<td>Air GO</td>
+	</tr>
+	<tr>
+	 <td>30</td>
+		<td>The</td>
+		<td>NOMAN</td>
+		<td>852369</td>
+		<td>Hyderbad</td>
+		<td>Andhra</td>
+		<td>India</td>
+		<td>Crimefighter Sorta</td>
+		<td>12 yrs</td>
+		<td>Air GO</td>
+	</tr>
+	</tbody>
+</table>
+</div>
+</center>
+</body>
+</html>
