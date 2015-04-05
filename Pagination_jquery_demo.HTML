@@ -13,15 +13,41 @@
 <script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
 <!-- <link rel="stylesheet" href="css/style.css"> -->
  <script >
- $(document).ready(
- /* This is the function that will get executed after the DOM is fully loaded */
-  function () {
-    $( "#tblData" ).DataTable({   
-             
-             sPaginationType: "full_numbers"
+ var tbl,tbl1;
+ var oSettings;
+ $(document).ready( function () {
+     tbl=$( "#tblData" ).DataTable({   
+              sPaginationType: "full_numbers",
+			  "sDom" : '<"H.items"i><"clear"><"#tableInfo"><"changeLength"><"clear"><"H"p>t<"F"ip>'});
+
+     var info = tbl.page.info(); 
+ 
+$('#tableInfo').html(
+    'page '+(info.page+1)+' of '+info.pages+' pages . Total Records '+info.recordsTotal+' .'
+);
+
+$('.changeLength').html(
+    '<button id="viewAllRecords">View All</button>'
+);
+callbutton();
 });
-	});
+
+function callbutton() {
+
+$('#mybutton').click(function(){
+alert('The element mybutton is clicked');
+tbl1= $( "#tblData" ).dataTable();
+oSettings=tbl1.fnSettings();
+ oSettings._iDisplayLength = 500;
+    tbl1.fnDraw();
+});
+}
  </script>
+ <style>
+ .clear{
+ clear:both;
+ }
+ </style>
 </head>
 
 <body>
@@ -31,6 +57,7 @@
 </br>
 </br>
 <div id="tableA">
+<input type="button" id="mybutton" value="Click me">
 <table id="tblData" border="1">
 	<thead>
 	<tr>
